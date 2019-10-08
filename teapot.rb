@@ -10,9 +10,9 @@ define_target "executor-lldb" do |target|
 	
 	target.depends :platform, public: true
 	
-	target.provides :executor => "Debugger/lldb"
+	target.provides :executor => "Executor/lldb"
 	
-	target.provides "Debugger/lldb" do
+	target.provides "Executor/lldb" do
 		define Rule, "run.executable-with-lldb" do
 			input :executable_file
 			
