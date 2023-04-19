@@ -8,8 +8,6 @@ teapot_version "3.0"
 define_target "executor-lldb" do |target|
 	target.priority = 0
 	
-	target.depends :platform, public: true
-	
 	target.provides :executor => "Executor/lldb"
 	
 	target.provides "Executor/lldb" do
