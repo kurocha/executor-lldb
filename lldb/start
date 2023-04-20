@@ -1,2 +1,2 @@
 break set -E C++
-run
+process launch
